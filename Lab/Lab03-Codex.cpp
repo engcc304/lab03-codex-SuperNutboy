@@ -3,25 +3,24 @@
 #include <stdlib.h>
 #include <time.h>
  
-void main(int) {
+int main() {
     char CustomerName[15],Name[10][15];
     int Quantity[10],NumberOfItems,i;
-    float UnitPrice[10],TotalPrice[10],TotalAmount ;
+    float UnitPrice[10],TotalPrice[10],TotalAmount;
 
     printf("Enter customer name [QUIT to stop] : ");
-    scanf("%s",CustomerName) ;
+    scanf("%s",CustomerName);
 
-    while(strcmp(CustomerName,"QUIT")!=0)
+    while(strcmp(CustomerName,"QUIT")!=0);
     i = 0;
-    printf("Enter name, quantity, and price for item %d [END 0 0] : ",i+1)
-    scan("%s %d %f", Name[i],  &quantity[i], UnitPrice[i]);
+    printf("Enter name, quantity, and price for item %d [END 0 0] : ",i+1);
+    scanf("%s %d %f", Name[i],  &Quantity[i], UnitPrice[i]);
     while(strcmp(Name[i],"END") != 0){
     i++;
-    print("Enter name, quantity, and price for item %d [END 0 0] : ", i+1);
-    scanf("%s %d %f", Name[i], &Quantity[i], &Unitprice[i])
+    printf("Enter name, quantity, and price for item %d [END 0 0] : ", i+1);
+    scanf("%s %d %f", Name[i], &Quantity[i], &UnitPrice[i]);
     NumberOfItems = i;
-}
-Totalamount = 0.0 ;
+    TotalAmount = 0.0 ;
     for(int i=0;i<NumberOfItems;i++) {
         TotalPrice[i] = Quantity[i]*UnitPrice[i];
             TotalAmount += TotalPrice[i];
@@ -35,6 +34,6 @@ Totalamount = 0.0 ;
                                         printf("%52s %11.2f\n", "TOTAL AMOUNT : ",TotalAmount);
                                             printf("Enter customer name [QUIT to stop] : ");
                                                 scanf("%s",CustomerName);
-                                                    }
                                                         return 0 ;
-                                                            } 
+                                                            }
+}
