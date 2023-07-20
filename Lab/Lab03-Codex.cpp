@@ -21,10 +21,9 @@ int main() {
     scanf("%s %d %f", Name[i], &Quantity[i], &UnitPrice[i]);
     NumberOfItems = i;
     TotalAmount = 0.0 ;
-    for(int i=0;i<NumberOfItems;i++) {
-        TotalPrice[i] = Quantity[i]*UnitPrice[i];
+        for(int i=0;i<NumberOfItems;i++) {
+            TotalPrice[i] = Quantity[i]*UnitPrice[i];
             TotalAmount += TotalPrice[i];
-                }
                     printf("--------------------------------------------------------------\n");
                         printf("%-20s %11s %13s %17s\n",  "Name", "Quantity", "Unit Price", "Total Price");
                             printf("--------------------------------------------------------------\n");
@@ -36,4 +35,5 @@ int main() {
                                                 scanf("%s",CustomerName);
                                                         return 0 ;
                                                             }
+    }
 }
