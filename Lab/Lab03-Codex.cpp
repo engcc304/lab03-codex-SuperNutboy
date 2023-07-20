@@ -9,7 +9,7 @@ void main(int) {
     float UnitPrice[10],TotalPrice[10],TotalAmount ;
 
     printf("Enter customer name [QUIT to stop] : ");
-    scanf("%s",Customername) ;
+    scanf("%s",CustomerName) ;
 
     while(strcmp(CustomerName,"QUIT")!=0)
     i = 0;
